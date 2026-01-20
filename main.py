@@ -44,14 +44,8 @@ def create_schedule(subjects: Set[str], teachers: List[Teacher]) -> Optional[Lis
         schedule.append(best_teacher)
         uncovered -= best_cover
 
-        
-
-
     return schedule
     
-
-
-
 
 if __name__ == '__main__':
     # Множина предметів
@@ -75,8 +69,6 @@ if __name__ == '__main__':
         for teacher in schedule:
             print(f"{teacher.first_name} {teacher.last_name}, {teacher.age} років, email: {teacher.email}")
             print(f"   Викладає предмети: {', '.join(sorted(teacher.assigned_subjects))}\n")
-
-        # 🔽 🔽 🔽 САМЕ ТУТ вставляємо код 🔽 🔽 🔽
 
         subject_to_teacher = {}
 
